@@ -1,9 +1,9 @@
 import google.generativeai as genai
 import streamlit as st
 
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-
 def generate_ai_insights(query):
+    genai.configure(api_key=st.secrets.get("GEMINI_API_KEY"))
+
     prompt = f"""
     You are a SQL Server performance tuning expert.
 
