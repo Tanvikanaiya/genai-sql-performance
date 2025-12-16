@@ -7,4 +7,5 @@ DB_CONFIG = {
     "database": st.secrets["DB_NAME"]
 }
 
-GEMINI_API_KEY = st.secrets["AIzaSyDhR7epH5Suvn-m3mWy5ceratoyCztsW1I"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+
